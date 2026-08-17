@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "pixel360",
+  "name": "fierce-media",
   "main": "./dist/_worker.js/index.js",
   "compatibility_date": "2025-05-21",
   "compatibility_flags": ["nodejs_compat"],
