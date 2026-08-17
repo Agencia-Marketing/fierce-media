@@ -8,22 +8,90 @@
   "servicesHeading": "Soluciones digitales para tu crecimiento",
   "servicesParagraph": "Impulsamos tu negocio en el entorno digital con estrategias personalizadas diseñadas para alcanzar tus objetivos específicos.",
   "services": [
-    { "icon": "code", "title": "Desarrollo Web", "desc": "Plataformas digitales de alto rendimiento que convierten visitantes en clientes desde el primer clic.", "href": "/servicios/desarrollo-web" },
-    { "icon": "smart_toy", "title": "Agentes de IA", "desc": "Automatiza atención al cliente y cualificación de leads con inteligencia activa las 24 horas.", "href": "/servicios/agentes-ia" },
-    { "icon": "palette", "title": "Diseño Gráfico", "desc": "Identidades visuales que comunican autoridad y generan reconocimiento inmediato en cada punto de contacto.", "href": "/servicios/diseno-grafico" },
-    { "icon": "diversity_3", "title": "Gestión de Redes", "desc": "Estrategia, contenido y comunidad: convertimos tus redes en un canal real de ventas y fidelización.", "href": "/servicios/redes-sociales" },
-    { "icon": "ads_click", "title": "Campañas de Ads", "desc": "Publicidad de precisión en Google y Meta para captar clientes listos para comprar ahora mismo.", "href": "/servicios/campanas-publicitarias" },
-    { "icon": "movie", "title": "Videomarketing", "desc": "Piezas audiovisuales estratégicas que amplifican tu mensaje y disparan el engagement.", "href": "/servicios/videomarketing" },
-    { "icon": "filter_alt", "title": "Embudos de Venta", "desc": "Sistemas de conversión automatizados que guían a tus prospectos hasta la compra con mínima fricción.", "href": "/servicios/embudos-venta" },
-    { "icon": "campaign", "title": "Creadores UGC", "desc": "Conectamos tu marca con creadores reales para campañas auténticas que aumentan conversiones.", "href": "/servicios/creadores-ugc" },
-    { "icon": "history_edu", "title": "Creación de Contenido", "desc": "Contenido estratégico que posiciona tu marca como referente y atrae tráfico cualificado de forma constante.", "href": "/servicios/creacion-contenido" }
+    {
+      "icon": "code",
+      "title": "Desarrollo Web",
+      "desc": "Plataformas digitales de alto rendimiento que convierten visitantes en clientes desde el primer clic.",
+      "href": "/servicios/desarrollo-web"
+    },
+    {
+      "icon": "smart_toy",
+      "title": "Agentes de IA",
+      "desc": "Automatiza atención al cliente y cualificación de leads con inteligencia activa las 24 horas.",
+      "href": "/servicios/agentes-ia"
+    },
+    {
+      "icon": "palette",
+      "title": "Diseño Gráfico",
+      "desc": "Identidades visuales que comunican autoridad y generan reconocimiento inmediato en cada punto de contacto.",
+      "href": "/servicios/diseno-grafico"
+    },
+    {
+      "icon": "diversity_3",
+      "title": "Gestión de Redes",
+      "desc": "Estrategia, contenido y comunidad: convertimos tus redes en un canal real de ventas y fidelización.",
+      "href": "/servicios/redes-sociales"
+    },
+    {
+      "icon": "ads_click",
+      "title": "Campañas de Ads",
+      "desc": "Publicidad de precisión en Google y Meta para captar clientes listos para comprar ahora mismo.",
+      "href": "/servicios/campanas-publicitarias"
+    },
+    {
+      "icon": "movie",
+      "title": "Videomarketing",
+      "desc": "Piezas audiovisuales estratégicas que amplifican tu mensaje y disparan el engagement.",
+      "href": "/servicios/videomarketing"
+    },
+    {
+      "icon": "filter_alt",
+      "title": "Embudos de Venta",
+      "desc": "Sistemas de conversión automatizados que guían a tus prospectos hasta la compra con mínima fricción.",
+      "href": "/servicios/embudos-venta"
+    },
+    {
+      "icon": "campaign",
+      "title": "Creadores UGC",
+      "desc": "Conectamos tu marca con creadores reales para campañas auténticas que aumentan conversiones.",
+      "href": "/servicios/creadores-ugc"
+    }
+  ],
+  "featuredHeading": "Relaciones Públicas y medios",
+  "featuredParagraph": "Servicios de comunicación y publicidad exterior que trabajamos de forma personalizada para cada cliente.",
+  "featuredCtaLabel": "Solicitar información",
+  "featuredServices": [
+    {
+      "icon": "campaign",
+      "title": "Relaciones Públicas",
+      "desc": "Desarrollamos campañas estratégicas en los medios de comunicación para lograr reconocimiento y posicionamiento de su empresa y marca corporativa. Identificamos el público, creamos objetivos medibles y cuantificables y seleccionamos el canal idóneo para llevar ese mensaje a su cliente. Trabajamos un plan personalizado enfocado en los detalles que son distintivos de su negocio.",
+      "price": "Desde $500.00"
+    },
+    {
+      "icon": "signpost",
+      "title": "Billboard",
+      "desc": "La publicidad \"Out of Home\" nunca pasa de moda. El 35% de las personas están pendientes de los billboards mientras guían. De esos que están pendientes, el 52% ha tomado decisiones de compra influenciado por lo que vio en los billboards. Desarrollamos la estrategia e identificamos el posicionamiento de billboards fijos y digitales.",
+      "price": "Desde $500.00"
+    }
   ],
   "reasonsHeading": "Por qué elegirnos",
   "reasons": [
-    { "title": "Amplia Trayectoria", "desc": "Contamos con años de experiencia liderando campañas de marketing exitosas en el sector digital, adaptándonos constantemente a las nuevas tendencias del mercado." },
-    { "title": "Equipo de Especialistas", "desc": "Nuestro equipo está formado por profesionales altamente cualificados en cada área del marketing digital, garantizando excelencia técnica en cada proyecto." },
-    { "title": "Creatividad y Estrategia Innovadora", "desc": "Fomentamos la creatividad y la innovación como pilares fundamentales para diferenciar a tu marca en un entorno digital saturado." },
-    { "title": "Enfoque en Resultados", "desc": "Estamos totalmente comprometidos con tus resultados comerciales, utilizando datos reales para optimizar cada fase de tu estrategia digital." }
+    {
+      "title": "Amplia Trayectoria",
+      "desc": "Contamos con años de experiencia liderando campañas de marketing exitosas en el sector digital, adaptándonos constantemente a las nuevas tendencias del mercado."
+    },
+    {
+      "title": "Equipo de Especialistas",
+      "desc": "Nuestro equipo está formado por profesionales altamente cualificados en cada área del marketing digital, garantizando excelencia técnica en cada proyecto."
+    },
+    {
+      "title": "Creatividad y Estrategia Innovadora",
+      "desc": "Fomentamos la creatividad y la innovación como pilares fundamentales para diferenciar a tu marca en un entorno digital saturado."
+    },
+    {
+      "title": "Enfoque en Resultados",
+      "desc": "Estamos totalmente comprometidos con tus resultados comerciales, utilizando datos reales para optimizar cada fase de tu estrategia digital."
+    }
   ],
   "ctaHeading": "Por qué Fierce Media es tu mejor opción",
   "ctaParagraph": "Nuestro enfoque diferente, basado en la personalización y la innovación constante, nos permite ofrecer soluciones que realmente impactan en el crecimiento de tu negocio.",

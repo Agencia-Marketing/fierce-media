@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { colors, fonts, logo } from '../config/theme.mjs';
+import { socialLinksFrom } from '../config/social.mjs';
 import site from '../content/settings/site.json';
 import plans from '../content/settings/plans.json';
 export interface Props {
@@ -9,7 +10,8 @@ export interface Props {
 }
 
 const { title, currentPage = 'inicio' } = Astro.props;
-const { brand, ctaLabel, nav, contact, footerTagline, footerPages, footerBottomLinks, copyright } = site;
+const { brand, ctaLabel, nav, contact, social, footerTagline, footerPages, footerBottomLinks, copyright } = site;
+const socialLinks = socialLinksFrom(social);
 const services = Object.entries(plans).map(([slug, s]) => ({ label: s.name, href: `/servicios/${slug}` }));
 const contactIcons: Record<string, string> = { phone: 'call', email: 'mail', location: 'location_on' };
 
@@ -70,9 +72,9 @@ const rootStyle = ':root{' + Object.entries(cssVars).map(([k, v]) => `${k}:${v}`
                 <span class="material-symbols-outlined text-[18px] transition-transform duration-200 group-hover:rotate-180">expand_more</span>
               </a>
               <div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 transition-all duration-200 z-50">
-                <div class="bg-surface rounded-2xl shadow-xl border border-outline-variant/40 p-2 w-64">
+                <div class="bg-on-primary-fixed rounded-2xl shadow-xl border border-white/15 p-2 w-64">
                   {services.map(s => (
-                    <a href={s.href} class="block px-4 py-2.5 rounded-xl font-body-md text-body-md text-on-surface hover:bg-primary-fixed hover:text-primary transition-colors">{s.label}</a>
+                    <a href={s.href} class="block px-4 py-2.5 rounded-xl font-body-md text-body-md text-white hover:bg-primary transition-colors">{s.label}</a>
                   ))}
                 </div>
               </div>
@@ -97,16 +99,21 @@ const rootStyle = ':root{' + Object.entries(cssVars).map(([k, v]) => `${k}:${v}`
     <div class="max-w-container-max mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
         <div class="space-y-6">
-          <div class="font-headline-md text-headline-md font-bold" style="color:#ffffff;">{brand}</div>
+          <div class="space-y-3">
+            {logo.image && <img src={logo.image} alt={logo.alt} class="h-14 w-auto" />}
+            <div class="font-headline-md text-headline-md font-bold" style="color:#ffffff;">{brand}</div>
+          </div>
           <p class="font-body-md text-body-md" style="color:rgba(255,255,255,0.65);">
             {footerTagline}
           </p>
           <div class="flex gap-3">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" style="color:#ffffff;">
-                <path d="M14 13.5h2.5l1-4H14V7.5c0-1.03 0-2 2-2h1.5V2.14c-.33-.04-1.55-.14-2.84-.14C11.93 2 10 3.66 10 6.7v2.8H7v4h3V22h4v-8.5z"/>
-              </svg>
-            </a>
+            {socialLinks.map(s => (
+              <a href={social[s.key]} target="_blank" rel="noopener noreferrer" aria-label={s.label} class="w-10 h-10 rounded-full flex items-center justify-center transition-colors press-effect" style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" style="color:#ffffff;">
+                  <path d={s.path}/>
+                </svg>
+              </a>
+            ))}
           </div>
         </div>
 

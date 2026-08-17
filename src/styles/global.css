@@ -154,6 +154,14 @@ nav a[class*="border-b"] {
   color: var(--color-primary) !important;
 }
 
+/* Ítems del desplegable de Servicios: panel negro, texto blanco en reposo y
+   en hover (el fondo pasa a oro). Necesitan más peso que `nav a` y
+   `nav a:hover`, que fuerzan el gris de la barra de navegación. */
+nav a[class~="text-white"],
+nav a[class~="text-white"]:hover {
+  color: #ffffff !important;
+}
+
 nav .font-bold:first-child,
 nav div.font-bold {
   color: var(--color-on-surface) !important;
@@ -303,7 +311,8 @@ img {
   box-shadow: 0 4px 16px rgba(var(--color-on-surface-rgb), 0.06);
 }
 
-header img {
+header img,
+footer img {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
@@ -438,6 +447,16 @@ section[class*="bg-primary"] button.bg-primary * {
 [class~="bg-primary-container"][class]:not(section),
 [class~="bg-primary-container"][class]:not(section) * {
   color: var(--color-on-accent) !important;
+}
+
+/* Radio de los botones. Sólo `button` y anclas con aspecto de botón: los
+   círculos de iconos y los enlaces sociales conservan su `rounded-full`. */
+button,
+a[class*="bg-primary"],
+a[class*="border-primary"],
+a[class*="bg-on-primary"],
+section[class*="bg-primary"] a[class*="bg-white"] {
+  border-radius: 5px !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

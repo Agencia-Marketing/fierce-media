@@ -36,8 +36,8 @@ export const colors = {
   'body-text':                '#333333',
   // Fondo de las secciones hero (bloques a pantalla completa).
   'hero-bg':                  '#000000',
-  // Texto sobre los botones/superficies en oro: negro, por contraste.
-  'on-accent':                '#000000',
+  // Texto sobre los botones/superficies en oro.
+  'on-accent':                '#ffffff',
 };
 
 // --- Tipografías. Cambia las familias y el enlace de Google Fonts juntos.

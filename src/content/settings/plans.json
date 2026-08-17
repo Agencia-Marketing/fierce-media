@@ -371,54 +371,5 @@
         ]
       }
     }
-  },
-  "creacion-contenido": {
-    "name": "Creación de Contenido",
-    "plans": {
-      "individual": {
-        "name": "Diseño Individual",
-        "label": "Individual",
-        "desc": "Un diseño individual (imagen fija) entregado en editable de CANVA.",
-        "features": [
-          "1 diseño (imagen fija)",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega: 1 a 2 días hábiles",
-          "1 mismo negocio (una sola línea gráfica)"
-        ]
-      },
-      "paquete-15": {
-        "name": "Paquete de 15 Diseños",
-        "label": "Plata",
-        "desc": "Paquete de 15 diseños con hasta 8 en formato video para impulsar tu presencia.",
-        "features": [
-          "15 diseños (hasta 8 en formato video)",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega: 5 días hábiles",
-          "1 mismo negocio (una sola línea gráfica)"
-        ]
-      },
-      "paquete-20": {
-        "name": "Paquete de 20 Diseños",
-        "label": "Oro",
-        "desc": "Cobertura de contenido robusta con 20 diseños y hasta 10 en formato video.",
-        "features": [
-          "20 diseños (hasta 10 en formato video)",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega: 5 días hábiles",
-          "1 mismo negocio (una sola línea gráfica)"
-        ]
-      },
-      "paquete-30": {
-        "name": "Paquete de 30 Diseños",
-        "label": "Platino",
-        "desc": "Volumen de publicaciones de nivel corporativo: 30 diseños con hasta 15 en formato video.",
-        "features": [
-          "30 diseños (hasta 15 en formato video)",
-          "Entrega en editable de CANVA",
-          "Tiempo de entrega: 5 días hábiles",
-          "1 mismo negocio (una sola línea gráfica)"
-        ]
-      }
-    }
   }
 }

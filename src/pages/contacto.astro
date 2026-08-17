@@ -2,10 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import contact from '../content/pages/contact.json';
 import site from '../content/settings/site.json';
+import { socialLinksFrom } from '../config/social.mjs';
 
 export const prerender = true;
 
 const { phone, email } = site.contact;
+const social = site.social;
+const socialLinks = socialLinksFrom(social);
 ---
 <Layout title={contact.title} currentPage="contacto">
 <section class="bg-primary text-on-primary py-section-padding-mobile md:py-section-padding-desktop">
@@ -54,15 +57,11 @@ const { phone, email } = site.contact;
 <div class="pt-8">
 <p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider mb-4">Redes Sociales</p>
 <div class="flex gap-4">
-<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect" href="#">
-<span class="material-symbols-outlined">social_leaderboard</span>
+{socialLinks.map(s => (
+<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all press-effect" href={social[s.key]} target="_blank" rel="noopener noreferrer" aria-label={s.label}>
+<svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d={s.path}/></svg>
 </a>
-<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect" href="#">
-<span class="material-symbols-outlined">public</span>
-</a>
-<a class="w-10 h-10 border border-outline-variant rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all press-effect" href="#">
-<span class="material-symbols-outlined">share</span>
-</a>
+))}
 </div>
 </div>
 </div>

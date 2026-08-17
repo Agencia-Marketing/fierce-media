@@ -56,6 +56,32 @@ export const prerender = true;
 <section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">{home.featuredHeading}</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">{home.featuredParagraph}</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+{home.featuredServices.map(s => (
+<div class="bg-white p-8 md:p-10 rounded-2xl border border-outline-variant/30 hover:border-primary/50 transition-all flex flex-col h-full shadow-sm card-hover stagger-fade">
+<div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">{s.icon}</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">{s.title}</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-6 flex-grow">
+                    {s.desc}
+                </p>
+<div class="font-headline-md text-headline-md text-primary mb-6">{s.price}</div>
+<a href="/contacto" class="w-full bg-primary text-on-primary py-3 rounded-xl font-bold text-center block btn-magnetic press-effect shadow-md shadow-primary/20">
+                    {home.featuredCtaLabel}
+                </a>
+</div>
+))}
+</div>
+</div>
+</section>
+<section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-16 space-y-4">
 <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">{home.reasonsHeading}</h2>
 <div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
 </div>
@@ -71,7 +97,7 @@ export const prerender = true;
 </div>
 </div>
 </section>
-<section class="bg-surface py-section-padding-mobile md:py-section-padding-desktop">
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 grid grid-cols-1 md:grid-cols-2 items-center">
 <div class="p-12 md:p-20 space-y-8">

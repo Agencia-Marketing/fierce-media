@@ -25,38 +25,29 @@ import Layout from '../../layouts/Layout.astro';
 </div>
 </section>
 <!-- 3. Benefits Bar -->
-<section class="bg-white py-20 relative -mt-10 mx-auto max-w-[1200px] rounded-xl shadow-xl z-20">
-<div class="px-gutter">
+<section class="bg-white py-16">
+<div class="max-w-container-max mx-auto px-gutter">
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Col 1: Alcance Estratégico -->
-<div class="flex flex-col items-center text-center p-4">
-<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary text-4xl">target</span>
+<div class="flex flex-col items-center text-center gap-4 stagger-fade">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary press-effect mb-2">
+<span class="material-symbols-outlined text-4xl">target</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Alcance Estratégico</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                        Campañas hiper-segmentadas que te permiten dominar tu mercado local o expandirte a nivel global sin desperdiciar presupuesto.
-                    </p>
+<h3 class="font-headline-md text-headline-md text-on-surface">Alcance Estratégico</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Campañas hiper-segmentadas que te permiten dominar tu mercado local o expandirte a nivel global sin desperdiciar presupuesto.</p>
 </div>
-<!-- Col 2: Google Ads -->
-<div class="flex flex-col items-center text-center p-4">
-<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary text-4xl">search</span>
+<div class="flex flex-col items-center text-center gap-4 stagger-fade">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary press-effect mb-2">
+<span class="material-symbols-outlined text-4xl">search</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Google Ads</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                        Intercepta a usuarios con alta intención de compra justo en el momento en que buscan tus productos o servicios.
-                    </p>
+<h3 class="font-headline-md text-headline-md text-on-surface">Google Ads</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Intercepta a usuarios con alta intención de compra justo en el momento en que buscan tus productos o servicios.</p>
 </div>
-<!-- Col 3: Optimización ROI -->
-<div class="flex flex-col items-center text-center p-4">
-<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary text-4xl">ads_click</span>
+<div class="flex flex-col items-center text-center gap-4 stagger-fade">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-primary press-effect mb-2">
+<span class="material-symbols-outlined text-4xl">ads_click</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Optimización ROI</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                        Análisis constante de datos para mejorar el rendimiento de tus anuncios y bajar tus costos de adquisición.
-                    </p>
+<h3 class="font-headline-md text-headline-md text-on-surface">Optimización ROI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Análisis constante de datos para mejorar el rendimiento de tus anuncios y bajar tus costos de adquisición.</p>
 </div>
 </div>
 </div>
@@ -66,7 +57,7 @@ import Layout from '../../layouts/Layout.astro';
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 <div>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-6">El poder de Google y Meta Ads combinados</h2>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">El poder de Google y Meta Ads combinados</h2>
 <p class="font-body-lg text-on-surface-variant mb-8">
                         No dependas de una sola fuente de tráfico. Diseñamos embudos de conversión donde las redes sociales generan interés y los motores de búsqueda capturan la demanda. Todo respaldado por una medición precisa usando Google Tag Manager y GA4 para garantizar que cada peso invertido genere resultados tangibles.
                     </p>
@@ -80,13 +71,13 @@ import Layout from '../../layouts/Layout.astro';
 <!-- 5. Nuestros Planes -->
 <section class="bg-white py-section-padding-mobile md:py-section-padding-desktop">
 <div class="max-w-container-max mx-auto px-gutter">
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-center text-on-surface mb-16">Planes de Gestión de Campañas</h2>
+<h2 class="font-headline-lg text-headline-lg text-center text-on-surface mb-16">Planes de Gestión de Campañas</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <!-- Row 1 -->
 <!-- Google Search -->
 <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-start border border-outline-variant/30">
 <span class="material-symbols-outlined text-primary text-4xl mb-4">search</span>
-<h3 class="font-headline-md text-on-surface mb-2">Google Search</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Google Search</h3>
 <ul class="space-y-3 mb-8 w-full">
 <li class="flex items-center gap-2 font-body-md text-on-surface-variant">
 <span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
@@ -107,7 +98,7 @@ import Layout from '../../layouts/Layout.astro';
 <div class="bg-white p-8 rounded-lg shadow-xl flex flex-col items-start border-2 border-primary relative">
 <span class="absolute top-0 right-8 -translate-y-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold">RECOMENDADO</span>
 <span class="material-symbols-outlined text-primary text-4xl mb-4">image</span>
-<h3 class="font-headline-md text-on-surface mb-2">Google Display</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Google Display</h3>
 <ul class="space-y-3 mb-8 w-full">
 <li class="flex items-center gap-2 font-body-md text-on-surface-variant">
 <span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
@@ -130,7 +121,7 @@ import Layout from '../../layouts/Layout.astro';
 <!-- Google Video -->
 <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-start border border-outline-variant/30">
 <span class="material-symbols-outlined text-primary text-4xl mb-4">video_library</span>
-<h3 class="font-headline-md text-on-surface mb-2">Google Video YouTube</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Google Video YouTube</h3>
 <ul class="space-y-3 mb-8 w-full">
 <li class="flex items-center gap-2 font-body-md text-on-surface-variant">
 <span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
@@ -154,7 +145,7 @@ import Layout from '../../layouts/Layout.astro';
 <!-- Facebook Ads -->
 <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-start border border-outline-variant/30">
 <span class="material-symbols-outlined text-primary text-4xl mb-4">facebook</span>
-<h3 class="font-headline-md text-on-surface mb-2">Facebook Ads</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Facebook Ads</h3>
 <ul class="space-y-3 mb-8 w-full">
 <li class="flex items-center gap-2 font-body-md text-on-surface-variant">
 <span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
@@ -174,7 +165,7 @@ import Layout from '../../layouts/Layout.astro';
 <!-- Instagram Ads (Featured) -->
 <div class="bg-white p-8 rounded-lg shadow-xl flex flex-col items-start border-2 border-primary">
 <span class="material-symbols-outlined text-primary text-4xl mb-4">photo_camera</span>
-<h3 class="font-headline-md text-on-surface mb-2">Instagram Ads</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Instagram Ads</h3>
 <ul class="space-y-3 mb-8 w-full">
 <li class="flex items-center gap-2 font-body-md text-on-surface-variant">
 <span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
@@ -194,7 +185,7 @@ import Layout from '../../layouts/Layout.astro';
 <!-- TikTok Ads -->
 <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-start border border-outline-variant/30">
 <span class="material-symbols-outlined text-primary text-4xl mb-4">brand_awareness</span>
-<h3 class="font-headline-md text-on-surface mb-2">TikTok Ads</h3>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">TikTok Ads</h3>
 <ul class="space-y-3 mb-8 w-full">
 <li class="flex items-center gap-2 font-body-md text-on-surface-variant">
 <span class="material-symbols-outlined text-primary text-sm">check</span> Análisis inicial
@@ -218,7 +209,7 @@ import Layout from '../../layouts/Layout.astro';
 <section class="bg-gray-50 py-section-padding-mobile md:py-section-padding-desktop">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="text-center mb-16">
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-4">Nuestros Trabajos</h2>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestros Trabajos</h2>
 <p class="font-body-lg text-on-surface-variant">Diseñamos anuncios visualmente impactantes para cada formato.</p>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">

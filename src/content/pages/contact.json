@@ -6,7 +6,17 @@
   "heroImageAlt": "Contacto",
   "formInfoHeading": "Escríbenos un mensaje",
   "formInfoText": "Estamos listos para transformar tu visión en una realidad digital impactante. Déjanos tus datos y un especialista se pondrá en contacto contigo en menos de 24 horas.",
-  "serviceOptions": ["Desarrollo Web", "Agentes de IA", "Gestión de Redes", "Campañas de Ads", "Diseño Gráfico", "Videomarketing", "Embudos de Venta", "Creadores UGC", "Creación de Contenido", "Otro"],
+  "serviceOptions": [
+    "Desarrollo Web",
+    "Agentes de IA",
+    "Gestión de Redes",
+    "Campañas de Ads",
+    "Diseño Gráfico",
+    "Videomarketing",
+    "Embudos de Venta",
+    "Creadores UGC",
+    "Otro"
+  ],
   "submitLabel": "SOLICITAR ASESORÍA",
   "mapImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuB6nVHVZWEmKfyoBWn-FocTAn2-7tBv-I3y8V1qDJZHchTN08ELSff4YuFB4i8YkCFv8DReKKJyNjxpH-Ke-BqpShVLWI7kk7e0Kldz-EdF70UKnnAAwyI2ZAPyFZ_Sa05mBcJjfDw8nWX4KhJwZT8d22qRDMFzvQmwQVuT-knP_aAkD_r8LNNiTOzwGvtT_ldcjCMFmrD-PTGWZy-BsfujARWgDornIb7CXgvISIfPsMmZ2xtQYpBlwjxyqpxvP63bOMdb-dKTOdZP",
   "mapLabel": "Escríbenos por WhatsApp"
