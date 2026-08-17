@@ -1,11 +1,11 @@
-# Pixel 360
+# Fierce Media
 
-Sitio web oficial de **Pixel 360**, agencia de marketing digital 360°. Impulsamos negocios con estrategia, tecnología e inteligencia artificial: desarrollo web, campañas publicitarias, redes sociales, diseño gráfico, video marketing y agentes de IA.
+Sitio web oficial de **Fierce Media**, agencia de mercadeo y relaciones públicas. Impulsamos marcas con estrategia, tecnología e inteligencia artificial: desarrollo web, campañas publicitarias, redes sociales, diseño gráfico, video marketing y agentes de IA.
 
 ## Sobre la agencia
 
-- **Marca:** Pixel 360
-- **Tagline:** Agencia de marketing digital 360°. Impulsamos tu negocio con estrategia, tecnología e IA.
+- **Marca:** Fierce Media
+- **Tagline:** Agencia de mercadeo y relaciones públicas. Impulsamos tu marca con estrategia, tecnología e IA.
 - **Ubicación:** Miami, FL · Atención LATAM
 - **Teléfono:** +1 (786) 818 0611
 - **Email:** csanchez@pixel360.media
@@ -13,14 +13,20 @@ Sitio web oficial de **Pixel 360**, agencia de marketing digital 360°. Impulsam
 
 ### Identidad visual
 
+Según el manual de identidad corporativa de Fierce Media (§5.1 Principales sólidos, §4 Tipografía):
+
 | Token | Valor |
 |---|---|
-| Azul marino (primario) | `#1C3E79` |
-| Cian (secundario / acento) | `#3DBFEF` |
-| Tipografía de titulares | Chakra Petch |
-| Tipografía de cuerpo | Poppins |
+| Negro (base / heroes / footer) | `#000000` |
+| Oro (primario) | `#C8952C` |
+| Oro claro (acento) | `#E7C279` |
+| Oro oscuro (hover, iconos sobre tintes) | `#6F501E` |
+| Tipografía corporativa (titulares) | Quicksand |
+| Tipografía secundaria (cuerpo) | Poppins |
 
 La marca, colores y tipografías se definen en un único archivo: [`src/config/theme.mjs`](src/config/theme.mjs).
+
+El imagotipo no debe recolorearse, rotarse, distorsionarse ni llevar sombras (§8 Usos incorrectos). Los archivos oficiales están en `public/`: `isotipo.png` (ícono, usado en el header y el favicon) y `logotipo.png` (imagotipo completo).
 
 ## Servicios
 
@@ -36,7 +42,7 @@ La marca, colores y tipografías se definen en un único archivo: [`src/config/t
 | `/servicios/creadores-ugc` | Creadores UGC |
 | `/servicios/creacion-contenido` | Creación de Contenido |
 
-Los precios y planes de cada servicio (en USD, según catálogo oficial) viven en [`src/content/settings/plans.json`](src/content/settings/plans.json).
+Los planes de cada servicio viven en [`src/content/settings/plans.json`](src/content/settings/plans.json). **El sitio no muestra precios**: no hay campo `price` ni referencias a importes en ninguna página.
 
 ## Stack
 
@@ -57,7 +63,7 @@ Los precios y planes de cada servicio (en USD, según catálogo oficial) viven e
 │   │   ├── pages/                  # Copys de Inicio, Nosotros, Contacto (JSON)
 │   │   └── settings/
 │   │       ├── site.json           # Marca, nav, contacto, footer
-│   │       └── plans.json          # Servicios, planes y precios
+│   │       └── plans.json          # Servicios y planes (sin precios)
 │   ├── layouts/
 │   │   └── Layout.astro            # Layout global (header, footer)
 │   ├── pages/
@@ -88,13 +94,13 @@ npm run preview   # → preview local del build
 
 - **Marca / colores / tipografías:** [`src/config/theme.mjs`](src/config/theme.mjs)
 - **Datos de contacto, nav y footer:** [`src/content/settings/site.json`](src/content/settings/site.json)
-- **Servicios, planes y precios:** [`src/content/settings/plans.json`](src/content/settings/plans.json)
+- **Servicios y planes:** [`src/content/settings/plans.json`](src/content/settings/plans.json)
 - **Textos de Inicio / Nosotros / Contacto:** [`src/content/pages/`](src/content/pages/)
 - **Cada página de servicio** tiene su propio `.astro` en `src/pages/servicios/`.
 
 ## Versión HTML standalone
 
-La carpeta `html/` contiene versiones HTML puras (Tailwind CDN + CSS inline) sin dependencias ni build. Útiles para entregas rápidas o clientes que solo necesitan archivos estáticos.
+La carpeta `html/` contiene versiones HTML puras (Tailwind CDN + CSS inline) sin dependencias ni build. **Es legado y no está migrada a la identidad de Fierce Media** (sigue con la paleta morada de la plantilla original). No se despliega; lo que sale a producción es la variante Astro de `src/`.
 
 ## Deploy
 

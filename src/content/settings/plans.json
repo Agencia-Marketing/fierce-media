@@ -5,7 +5,6 @@
       "landing-page": {
         "name": "Landing Page",
         "label": "Express",
-        "price": "$500 - $700 USD",
         "desc": "Sitio de una sola página con tus datos de contacto y formulario. Versión Económica (plantilla) o A la medida (diseño desde cero).",
         "features": [
           "1 página web",
@@ -18,7 +17,6 @@
       "web-informativa": {
         "name": "Sitio Web Informativo",
         "label": "Corporate",
-        "price": "$700 - $850 USD",
         "desc": "Plataforma corporativa de 5 páginas ideal para mostrar servicios y generar credibilidad. Versión Económica o A la medida.",
         "features": [
           "5 páginas: Inicio, Nosotros, Contacto, Servicios y Testimonios",
@@ -31,7 +29,6 @@
       "ecommerce-whatsapp": {
         "name": "E-commerce a WhatsApp",
         "label": "WhatsApp",
-        "price": "$800 - $1,000 USD",
         "desc": "Tienda con catálogo de productos donde los clientes envían su pedido directo a WhatsApp para cerrar la venta.",
         "features": [
           "Catálogo de productos",
@@ -44,7 +41,6 @@
       "ecommerce-pasarela": {
         "name": "E-commerce con Pasarela",
         "label": "Enterprise",
-        "price": "$1,000 - $1,200 USD",
         "desc": "Tienda en línea completa con pasarela de pagos: tus clientes compran y pagan directamente en el sitio.",
         "features": [
           "Tienda en línea completa",
@@ -62,20 +58,18 @@
       "configuracion": {
         "name": "Configuración Agente 24/7",
         "label": "Pago Único",
-        "price": "$500 USD",
         "desc": "Implementación completa de tu agente conversacional de IA activo las 24 horas. Requiere cuenta de HighLead o GHL.",
         "features": [
           "Configuración del agente IA por nuestro equipo",
           "Plataforma donde se instala tu agente",
-          "WhatsApp API incluido en el precio",
-          "10 USD de consumo de IA (~700-800 mensajes)",
+          "WhatsApp API incluido",
+          "Consumo de IA inicial incluido (~700-800 mensajes)",
           "Soporte técnico de nuestro equipo"
         ]
       },
       "mensualidad": {
         "name": "Mensualidad Agente 24/7",
         "label": "Mensual",
-        "price": "$200 USD / mes",
         "desc": "Mantenimiento mensual de tu agente de IA 24/7 con soporte continuo. Requiere cuenta de HighLead (highlead.us) o GHL.",
         "features": [
           "Agente IA activo 24/7",
@@ -93,7 +87,6 @@
       "diseno-marca": {
         "name": "Diseño de Marca",
         "label": "Branding",
-        "price": "$250 USD",
         "desc": "Identidad visual completa: 3 propuestas de logotipo y todo el material de apoyo de tu marca.",
         "features": [
           "3 propuestas de logotipo (1 ronda de cambios)",
@@ -106,7 +99,6 @@
       "naming": {
         "name": "Naming",
         "label": "Naming",
-        "price": "$150 USD",
         "desc": "Búsqueda estratégica y validación para el nombre perfecto de tu marca.",
         "features": [
           "Búsqueda de naming",
@@ -118,7 +110,6 @@
       "menu-pyme": {
         "name": "Menú Digital Pyme",
         "label": "Recomendado",
-        "price": "$50 USD",
         "desc": "Carta digital interactiva y profesional para tu restaurante o negocio.",
         "features": [
           "Diseño de menú digital",
@@ -130,7 +121,6 @@
       "menu-empresarial": {
         "name": "Menú Digital Empresarial",
         "label": "Empresarial",
-        "price": "$180 USD",
         "desc": "Carta digital avanzada con diseño fotográfico y versión física para mesa.",
         "features": [
           "Diseño de menú digital avanzado",
@@ -148,7 +138,6 @@
       "esencial": {
         "name": "Plan Esencial",
         "label": "1 Red Social",
-        "price": "$200 / mes · $2,000 / año USD",
         "desc": "Presencia constante y profesional en tu red social principal, con equipo dedicado.",
         "features": [
           "Gestión de 1 red social",
@@ -161,7 +150,6 @@
       "indispensable": {
         "name": "Plan Indispensable",
         "label": "2 Redes",
-        "price": "$220 / mes · $2,200 / año USD",
         "desc": "La solución óptima para negocios que operan en dos plataformas.",
         "features": [
           "Gestión de 2 redes sociales",
@@ -174,7 +162,6 @@
       "todo-en-uno": {
         "name": "Plan Todo en Uno",
         "label": "3 Redes",
-        "price": "$250 / mes · $2,500 / año USD",
         "desc": "Plan integral para marcas activas en tres plataformas con diseño y reportes.",
         "features": [
           "Gestión de 3 redes sociales",
@@ -187,7 +174,6 @@
       "profesional": {
         "name": "Plan Profesional",
         "label": "4 Redes",
-        "price": "$280 / mes · $2,800 / año USD",
         "desc": "Control multicanal avanzado para marcas presentes en cuatro plataformas.",
         "features": [
           "Gestión de 4 redes sociales",
@@ -200,7 +186,6 @@
       "omnipresente": {
         "name": "Plan Omnipresente",
         "label": "6 Redes",
-        "price": "$310 / mes · $3,100 / año USD",
         "desc": "Dominio digital multiplataforma completo con equipo dedicado.",
         "features": [
           "Gestión de 6 redes sociales",
@@ -213,14 +198,13 @@
       "master-plan": {
         "name": "Master Plan",
         "label": "Todo Incluido",
-        "price": "$250 / mes · $2,500 / año USD",
-        "desc": "El paquete de marketing más completo al mejor precio: redes sociales, contenido y sitio web informativo.",
+        "desc": "El paquete de marketing más completo: redes sociales, contenido y sitio web informativo.",
         "features": [
           "Instagram, Facebook y TikTok (15 diseños c/u, 8 videos en TikTok)",
           "Community manager, trafficker y diseñador gráfico",
           "Sitio web informativo (5 páginas)",
           "Especialista en campañas incluido",
-          "La primera contratación incluye $20 USD en ads"
+          "La primera contratación incluye inversión inicial en ads"
         ]
       }
     }
@@ -231,7 +215,6 @@
       "google-search": {
         "name": "Google Search",
         "label": "Búsqueda",
-        "price": "$85 USD",
         "desc": "Posiciónate en los primeros resultados de Google y capta clientes interesados en tu producto o servicio.",
         "features": [
           "Análisis inicial",
@@ -244,7 +227,6 @@
       "google-display": {
         "name": "Google Display",
         "label": "Display",
-        "price": "$135 USD",
         "desc": "Anuncios visuales en millones de sitios web asociados a Google para generar branding y alcance.",
         "features": [
           "Análisis inicial",
@@ -257,7 +239,6 @@
       "google-video": {
         "name": "Google Video YouTube",
         "label": "YouTube",
-        "price": "$220 USD",
         "desc": "Anuncios de video en YouTube: solo pagas cuando alguien elige ver tu video. Ideal para nuevos negocios y remarketing.",
         "features": [
           "Análisis inicial",
@@ -270,7 +251,6 @@
       "facebook-ads": {
         "name": "Facebook Ads",
         "label": "Meta",
-        "price": "$50 USD",
         "desc": "Llega a clientes interesados en tu producto o servicio con anuncios efectivos en Facebook.",
         "features": [
           "Análisis inicial",
@@ -283,7 +263,6 @@
       "instagram-ads": {
         "name": "Instagram Ads",
         "label": "Meta",
-        "price": "$50 USD",
         "desc": "Estrategia según el giro de tu negocio para generar engagement en Instagram.",
         "features": [
           "Análisis inicial",
@@ -296,7 +275,6 @@
       "tiktok-ads": {
         "name": "TikTok Ads",
         "label": "TikTok",
-        "price": "$50 USD",
         "desc": "Aprovecha la creatividad del video en una de las redes en tendencia con TikTok Ads.",
         "features": [
           "Análisis inicial",
@@ -314,8 +292,7 @@
       "basico": {
         "name": "Video Básico",
         "label": "Básico",
-        "price": "$40 - $100 USD",
-        "desc": "Edición de video con transiciones simples y textos 2D. Precio según duración (menos de 30s, 30s o 60s).",
+        "desc": "Edición de video con transiciones simples y textos 2D. Disponible en versiones de menos de 30s, 30s o 60s.",
         "features": [
           "Edición con transiciones simples",
           "Textos 2D",
@@ -326,8 +303,7 @@
       "inter": {
         "name": "Video Inter",
         "label": "Intermedio",
-        "price": "$75 - $200 USD",
-        "desc": "Edición con transiciones más elaboradas y uso de mockups. Precio según duración.",
+        "desc": "Edición con transiciones más elaboradas y uso de mockups. Disponible en versiones de menos de 30s, 30s o 60s.",
         "features": [
           "Edición con transiciones elaboradas",
           "Uso de mockups",
@@ -338,8 +314,7 @@
       "completo": {
         "name": "Video Completo",
         "label": "Completo",
-        "price": "$100 - $500 USD",
-        "desc": "Edición con transiciones elaboradas, mockups y animaciones para campañas de alto impacto. Precio según duración.",
+        "desc": "Edición con transiciones elaboradas, mockups y animaciones para campañas de alto impacto. Disponible en versiones de menos de 30s, 30s o 60s.",
         "features": [
           "Edición avanzada con transiciones y mockups",
           "Animaciones",
@@ -350,7 +325,6 @@
       "voz-off": {
         "name": "Narración de Voz en Off",
         "label": "Locución",
-        "price": "$30 - $50 USD",
         "desc": "Locución profesional para dar vida a tu proyecto. Se contrata por separado del video marketing.",
         "features": [
           "Apoyo en la creación del guion",
@@ -367,7 +341,6 @@
       "embudo-fb": {
         "name": "Embudo con Filtro API de Facebook",
         "label": "Pago Único",
-        "price": "$300 USD",
         "desc": "Sistema de ventas llave en mano: pago único para dejar el embudo funcionando. No incluye la plataforma HighLead.",
         "features": [
           "Diseño de landing page",
@@ -387,7 +360,6 @@
       "ugc": {
         "name": "Creadores UGC",
         "label": "Campaña UGC",
-        "price": "$250 USD",
         "desc": "Videos publicitarios con personas reales para generar anuncios con alta credibilidad.",
         "features": [
           "Diseño de script (guion de video vendedor)",
@@ -406,7 +378,6 @@
       "individual": {
         "name": "Diseño Individual",
         "label": "Individual",
-        "price": "$12 USD",
         "desc": "Un diseño individual (imagen fija) entregado en editable de CANVA.",
         "features": [
           "1 diseño (imagen fija)",
@@ -418,7 +389,6 @@
       "paquete-15": {
         "name": "Paquete de 15 Diseños",
         "label": "Plata",
-        "price": "$100 USD",
         "desc": "Paquete de 15 diseños con hasta 8 en formato video para impulsar tu presencia.",
         "features": [
           "15 diseños (hasta 8 en formato video)",
@@ -430,7 +400,6 @@
       "paquete-20": {
         "name": "Paquete de 20 Diseños",
         "label": "Oro",
-        "price": "$150 USD",
         "desc": "Cobertura de contenido robusta con 20 diseños y hasta 10 en formato video.",
         "features": [
           "20 diseños (hasta 10 en formato video)",
@@ -442,7 +411,6 @@
       "paquete-30": {
         "name": "Paquete de 30 Diseños",
         "label": "Platino",
-        "price": "$160 USD",
         "desc": "Volumen de publicaciones de nivel corporativo: 30 diseños con hasta 15 en formato video.",
         "features": [
           "30 diseños (hasta 15 en formato video)",

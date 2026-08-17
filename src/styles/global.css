@@ -123,7 +123,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   color: var(--color-on-surface);
 }
 
@@ -208,12 +208,12 @@ div[class*="bg-white"]:hover {
 [class*="bg-primary-fixed"]:not([class*="bg-on-primary-fixed"]) {
   background-color: var(--color-primary-fixed) !important;
   background-image: none !important;
-  color: var(--color-primary) !important;
+  color: var(--color-primary-dark) !important;
 }
 
 .bg-primary-fixed *,
 [class*="bg-primary-fixed"]:not([class*="bg-on-primary-fixed"]) * {
-  color: var(--color-primary) !important;
+  color: var(--color-primary-dark) !important;
 }
 
 a.bg-primary-container,
@@ -222,7 +222,7 @@ a.bg-primary,
 button.bg-primary {
   background-color: var(--color-primary) !important;
   background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%) !important;
-  color: var(--color-on-primary) !important;
+  color: var(--color-on-accent) !important;
   border: none !important;
   box-shadow: 0 3px 10px rgba(var(--color-primary-rgb), 0.20);
   transition: background-image 0.2s ease, box-shadow 0.2s ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -248,11 +248,12 @@ a.bg-primary-container *,
 button.bg-primary-container *,
 a.bg-primary *,
 button.bg-primary * {
-  color: var(--color-on-primary) !important;
+  color: var(--color-on-accent) !important;
 }
 
+/* Bloques a pantalla completa (heroes): fondo negro de marca, texto blanco. */
 section.bg-primary {
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-hero-bg) !important;
   background-image: none !important;
 }
 
@@ -278,9 +279,22 @@ section.bg-primary .glass-card * {
 .text-on-surface          { color: var(--color-on-surface) !important; }
 .text-on-surface-variant  { color: var(--color-on-surface-variant) !important; }
 .text-on-primary          { color: var(--color-on-primary) !important; }
-.text-primary             { color: var(--color-primary) !important; }
 .text-on-primary-container{ color: var(--color-on-primary) !important; }
 .text-on-primary-fixed    { color: var(--color-on-primary-fixed) !important; }
+
+/* El oro de marca (#C8952C) como TEXTO sobre blanco da 2.5:1 y no cumple AA.
+   Para texto se usa el oro oscuro del manual (#6F501E, 6.6:1); el oro brillante
+   se reserva para fondos, bordes e iconos grandes. */
+.text-primary,
+.text-primary-container   { color: var(--color-primary-dark) !important; }
+
+/* Botones outline que se rellenan de oro al hover: el label pasa a negro. */
+[class~="hover:bg-primary"]:hover,
+[class~="hover:bg-primary"]:hover *,
+[class~="hover:bg-primary-container"]:hover,
+[class~="hover:bg-primary-container"]:hover * {
+  color: var(--color-on-accent) !important;
+}
 
 .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
 
@@ -329,7 +343,7 @@ section.bg-primary [class*="glass-card"]:hover {
   transform: translateY(-3px);
 }
 
-footer, footer * { color: var(--color-on-primary) !important; }
+footer, footer * { color: #ffffff !important; }
 footer {
   background-color: var(--color-footer-bg) !important;
   background-image: none !important;
@@ -395,14 +409,35 @@ section[class*="bg-primary"] button.bg-white,
 section[class*="bg-primary"] a.bg-white,
 div[class*="bg-primary"] button.bg-white,
 div[class*="bg-primary"] a.bg-white {
-  color: var(--color-primary) !important;
+  color: var(--color-on-surface) !important;
 }
 
 section[class*="bg-primary"] button.bg-white *,
 section[class*="bg-primary"] a.bg-white *,
 div[class*="bg-primary"] button.bg-white *,
 div[class*="bg-primary"] a.bg-white * {
-  color: var(--color-primary) !important;
+  color: var(--color-on-surface) !important;
+}
+
+/* Botón en oro dentro de un hero: el label va en negro, no en blanco.
+   Necesita más especificidad que las reglas de texto blanco de arriba. */
+section[class*="bg-primary"] a.bg-primary,
+section[class*="bg-primary"] button.bg-primary,
+section[class*="bg-primary"] a.bg-primary *,
+section[class*="bg-primary"] button.bg-primary * {
+  color: var(--color-on-accent) !important;
+}
+
+/* Cualquier chip, badge, tarjeta u overlay con fondo oro lleva texto negro:
+   blanco sobre #C8952C da 2.5:1 y no cumple AA.
+   El `[class]` extra es intencional: sube la especificidad a (0,2,1) para
+   ganarle a `div[class*="bg-primary"] span` (0,1,2) de las reglas de hero,
+   que fuerzan texto blanco sobre fondo oscuro. */
+[class~="bg-primary"][class]:not(section),
+[class~="bg-primary"][class]:not(section) *,
+[class~="bg-primary-container"][class]:not(section),
+[class~="bg-primary-container"][class]:not(section) * {
+  color: var(--color-on-accent) !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

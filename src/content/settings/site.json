@@ -1,5 +1,5 @@
 {
-  "brand": "Pixel 360",
+  "brand": "FIERCE MEDIA",
   "ctaLabel": "Contáctanos",
   "nav": [
     { "label": "Inicio", "href": "/" },
@@ -12,7 +12,7 @@
     "email": "csanchez@pixel360.media",
     "location": "Miami, FL · Atención LATAM"
   },
-  "footerTagline": "Agencia de marketing digital 360°. Impulsamos tu negocio con estrategia, tecnología e IA.",
+  "footerTagline": "Agencia de mercadeo y relaciones públicas. Impulsamos tu marca con estrategia, tecnología e IA.",
   "footerPages": [
     { "label": "Inicio", "href": "/" },
     { "label": "Nosotros", "href": "/nosotros" },
@@ -23,5 +23,5 @@
     { "label": "Términos", "href": "#" },
     { "label": "Soporte", "href": "/contacto" }
   ],
-  "copyright": "© 2026 Pixel 360 | Todos los derechos reservados."
+  "copyright": "© 2026 Fierce Media | Todos los derechos reservados."
 }

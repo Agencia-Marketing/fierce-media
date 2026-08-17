@@ -31,6 +31,7 @@ pnpm-debug.log*
 skills-lock.json
 
 # raw brand reference assets (not used at runtime; see public/ for site assets)
+/Imágenes/
 /catalogo-pixel360.pdf
 /manual-de-identidad.pdf
 /Tipografías/

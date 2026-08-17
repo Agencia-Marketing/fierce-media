@@ -15,7 +15,7 @@ export const prerender = true;
                     {home.heroParagraph}
                 </p>
 <div>
-<button onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})" class="bg-white text-primary hover:bg-primary hover:text-white transition-colors px-8 py-4 rounded-2xl font-bold font-body-md text-body-md btn-magnetic shadow-xl press-effect">
+<button onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})" class="bg-primary hover:brightness-110 transition-all px-8 py-4 rounded-2xl font-bold font-body-md text-body-md btn-magnetic shadow-xl press-effect">
                         <span class="icon-wrap">{home.heroCtaLabel}</span>
                     </button>
 </div>
@@ -53,16 +53,17 @@ export const prerender = true;
         </div>
 </div>
 </section>
-<section class="bg-primary py-section-padding-mobile md:py-section-padding-desktop">
+<section class="bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="text-center mb-16 space-y-4">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-primary">{home.reasonsHeading}</h2>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">{home.reasonsHeading}</h2>
+<div class="h-1.5 w-24 bg-primary mx-auto rounded-full"></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 rounded-2xl overflow-hidden border border-white/20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline rounded-2xl overflow-hidden border border-outline">
 {home.reasons.map(r => (
-<div class="p-12 glass-card">
-<span class="font-headline-md text-headline-md text-on-primary mb-4 block">{r.title}</span>
-<p class="text-on-primary/70 font-body-md text-body-md">
+<div class="p-12 bg-surface">
+<span class="font-headline-md text-headline-md text-on-surface mb-4 block">{r.title}</span>
+<p class="text-on-surface-variant font-body-md text-body-md">
                         {r.desc}
                     </p>
 </div>
